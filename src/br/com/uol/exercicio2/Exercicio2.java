@@ -2,18 +2,12 @@ package br.com.uol.exercicio2;
 
 import java.util.Arrays;
 
-import br.com.uol.exercicio1.Exercicio1;
-
 public class Exercicio2 implements Solution{
 
 	@Override
 	public int candy(int[] ratings) {
 		//ordenar as notas
 		Arrays.sort(ratings);
-		
-		//verificar notas unicas
-//		String unicas = ratings.toString();
-//		new Exercicio1().isUnique(unicas);
 		
 		//distribuir as balas
 		int entrega = 1;
@@ -49,6 +43,4 @@ public class Exercicio2 implements Solution{
 		System.out.println("A professora deverá distribuir: " + new Exercicio2().candy(ratings3) + " doces.");
 	}
 	
-//	public void removerRepeticoes
-
 }
